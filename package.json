@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/kwmorris14/ReactCRUDFun.git"
   },
+  "scripts": {
+    "build": "babel reactshop -d scripts && browserify scripts/*.js -o dist/app.js",
+    "prestart": "npm run build",
+  },
   "author": "Keith Morris",
   "license": "ISC",
   "bugs": {
